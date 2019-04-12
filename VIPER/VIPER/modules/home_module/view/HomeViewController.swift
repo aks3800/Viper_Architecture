@@ -9,9 +9,8 @@
 import UIKit
 
 
-@objcMembers class HomeViewController: UIViewController, HomeViewPropertiesProtocol {
+@objcMembers class HomeViewController: UIViewController{
     
-    var presenter: HomeViewToPresenterProtocol?
     
     let button: UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
@@ -23,10 +22,10 @@ import UIKit
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
-        print("View: View is loaded now. Will ask presenter to start fetching data")
-        presenter?.startFetchingData()
 
         // Do any additional setup after loading the view.
+        print("Home View Controller Loaded")
+        showView()
     }
     
     deinit {
@@ -35,10 +34,9 @@ import UIKit
 }
 
 
-extension HomeViewController: HomePresenterToViewProtocol {
+extension HomeViewController {
     
     func showView() {
-        print("View: Presenter has asked View to show itself")
         view.addSubview(button)
         NSLayoutConstraint.activate([
             button.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -46,11 +44,6 @@ extension HomeViewController: HomePresenterToViewProtocol {
             ])
         button.addTarget(self, action: #selector(buttonTapped), for: UIControl.Event.touchUpInside)
     }
-    
-    func showError() {
-        print("View: Presenter has asked view to show error")
-    }
-    
 }
 
 
@@ -58,8 +51,7 @@ extension HomeViewController: HomePresenterToViewProtocol {
 extension HomeViewController {
     func buttonTapped() -> Void {
         if let navController = navigationController {
-            print("View: Button is tapped on View. View will tell Presenter that button has been tapped")
-            presenter?.buttonTapped(navigationController: navController)
+            navController.pushViewController(AccountViewController(), animated: true)
         }
     }
 }

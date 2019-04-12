@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         /* Create ui-view-controller instance*/
-        let homeModule = HomeBuilder.createModule()
+        let homeModule = HomeViewController()
         
         /* Initiating instance of ui-navigation-controller with view-controller */
         let navigationController = UINavigationController()

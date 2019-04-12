@@ -8,8 +8,7 @@
 
 import UIKit
 
-class AccountViewController: UIViewController, AccountViewPropertiesProtocol {
-    var presenter: AccountViewToPresenterProtocol?
+class AccountViewController: UIViewController {
     
     let label: UILabel = {
         let label = UILabel()
@@ -24,8 +23,8 @@ class AccountViewController: UIViewController, AccountViewPropertiesProtocol {
 
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.white
-        print("\n\nAccount View Controller Loaded\n\n")
-        presenter?.startFetchingData()
+        print("Account View Controller Loaded")
+        showView()
     }
     
     deinit {
@@ -35,15 +34,12 @@ class AccountViewController: UIViewController, AccountViewPropertiesProtocol {
 }
 
 
-extension AccountViewController: AccountPresenterToViewProtocol {
+extension AccountViewController{
     func showView() {
         view.addSubview(label)
         NSLayoutConstraint.activate([
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
             ])
-    }
-    
-    func showError() {
     }
 }

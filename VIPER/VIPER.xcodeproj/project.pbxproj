@@ -10,18 +10,8 @@
 		09076240225F565F00F768F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0907623F225F565F00F768F3 /* AppDelegate.swift */; };
 		09076247225F566000F768F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09076246225F566000F768F3 /* Assets.xcassets */; };
 		0907624A225F566000F768F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09076248225F566000F768F3 /* LaunchScreen.storyboard */; };
-		09076260225F580A00F768F3 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0907625F225F580A00F768F3 /* HomeProtocols.swift */; };
 		09076262225F5AE500F768F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09076261225F5AE500F768F3 /* HomeViewController.swift */; };
-		09076264225F616100F768F3 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09076263225F616100F768F3 /* HomeRouter.swift */; };
-		090762662260741900F768F3 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090762652260741900F768F3 /* HomePresenter.swift */; };
-		090762682260758800F768F3 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090762672260758800F768F3 /* HomeInteractor.swift */; };
-		0907626A2260930400F768F3 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090762692260930400F768F3 /* HomeBuilder.swift */; };
-		0907626C22609EBE00F768F3 /* AccountProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0907626B22609EBE00F768F3 /* AccountProtocols.swift */; };
-		0907626E22609EEB00F768F3 /* AccountBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0907626D22609EEB00F768F3 /* AccountBuilder.swift */; };
 		0907627022609FCC00F768F3 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0907626F22609FCC00F768F3 /* AccountViewController.swift */; };
-		090762722260A06800F768F3 /* AccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090762712260A06800F768F3 /* AccountPresenter.swift */; };
-		090762742260A0C900F768F3 /* AccountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090762732260A0C900F768F3 /* AccountInteractor.swift */; };
-		090762762260A2A600F768F3 /* AccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090762752260A2A600F768F3 /* AccountRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,18 +20,8 @@
 		09076246225F566000F768F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09076249225F566000F768F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0907624B225F566000F768F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0907625F225F580A00F768F3 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		09076261225F5AE500F768F3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		09076263225F616100F768F3 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
-		090762652260741900F768F3 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
-		090762672260758800F768F3 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
-		090762692260930400F768F3 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
-		0907626B22609EBE00F768F3 /* AccountProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountProtocols.swift; sourceTree = "<group>"; };
-		0907626D22609EEB00F768F3 /* AccountBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBuilder.swift; sourceTree = "<group>"; };
 		0907626F22609FCC00F768F3 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
-		090762712260A06800F768F3 /* AccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPresenter.swift; sourceTree = "<group>"; };
-		090762732260A0C900F768F3 /* AccountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInteractor.swift; sourceTree = "<group>"; };
-		090762752260A2A600F768F3 /* AccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,13 +76,7 @@
 		09076252225F56D800F768F3 /* home_module */ = {
 			isa = PBXGroup;
 			children = (
-				0907625D225F574500F768F3 /* router */,
-				0907625C225F574000F768F3 /* entity */,
-				0907625B225F573B00F768F3 /* presentor */,
-				0907625A225F573300F768F3 /* interactor */,
 				09076259225F572E00F768F3 /* view */,
-				0907625F225F580A00F768F3 /* HomeProtocols.swift */,
-				090762692260930400F768F3 /* HomeBuilder.swift */,
 			);
 			path = home_module;
 			sourceTree = "<group>";
@@ -110,13 +84,7 @@
 		09076253225F56E900F768F3 /* account_module */ = {
 			isa = PBXGroup;
 			children = (
-				09076258225F572500F768F3 /* router */,
-				09076257225F572000F768F3 /* entity */,
-				09076256225F571700F768F3 /* presenter */,
-				09076255225F570C00F768F3 /* interactor */,
 				09076254225F570300F768F3 /* view */,
-				0907626B22609EBE00F768F3 /* AccountProtocols.swift */,
-				0907626D22609EEB00F768F3 /* AccountBuilder.swift */,
 			);
 			path = account_module;
 			sourceTree = "<group>";
@@ -129,74 +97,12 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		09076255225F570C00F768F3 /* interactor */ = {
-			isa = PBXGroup;
-			children = (
-				090762732260A0C900F768F3 /* AccountInteractor.swift */,
-			);
-			path = interactor;
-			sourceTree = "<group>";
-		};
-		09076256225F571700F768F3 /* presenter */ = {
-			isa = PBXGroup;
-			children = (
-				090762712260A06800F768F3 /* AccountPresenter.swift */,
-			);
-			path = presenter;
-			sourceTree = "<group>";
-		};
-		09076257225F572000F768F3 /* entity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = entity;
-			sourceTree = "<group>";
-		};
-		09076258225F572500F768F3 /* router */ = {
-			isa = PBXGroup;
-			children = (
-				090762752260A2A600F768F3 /* AccountRouter.swift */,
-			);
-			path = router;
-			sourceTree = "<group>";
-		};
 		09076259225F572E00F768F3 /* view */ = {
 			isa = PBXGroup;
 			children = (
 				09076261225F5AE500F768F3 /* HomeViewController.swift */,
 			);
 			path = view;
-			sourceTree = "<group>";
-		};
-		0907625A225F573300F768F3 /* interactor */ = {
-			isa = PBXGroup;
-			children = (
-				090762672260758800F768F3 /* HomeInteractor.swift */,
-			);
-			path = interactor;
-			sourceTree = "<group>";
-		};
-		0907625B225F573B00F768F3 /* presentor */ = {
-			isa = PBXGroup;
-			children = (
-				090762652260741900F768F3 /* HomePresenter.swift */,
-			);
-			path = presentor;
-			sourceTree = "<group>";
-		};
-		0907625C225F574000F768F3 /* entity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = entity;
-			sourceTree = "<group>";
-		};
-		0907625D225F574500F768F3 /* router */ = {
-			isa = PBXGroup;
-			children = (
-				09076263225F616100F768F3 /* HomeRouter.swift */,
-			);
-			path = router;
 			sourceTree = "<group>";
 		};
 		0907625E225F579600F768F3 /* utils */ = {
@@ -276,18 +182,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09076260225F580A00F768F3 /* HomeProtocols.swift in Sources */,
 				09076240225F565F00F768F3 /* AppDelegate.swift in Sources */,
-				090762742260A0C900F768F3 /* AccountInteractor.swift in Sources */,
-				090762762260A2A600F768F3 /* AccountRouter.swift in Sources */,
-				0907626C22609EBE00F768F3 /* AccountProtocols.swift in Sources */,
-				090762662260741900F768F3 /* HomePresenter.swift in Sources */,
-				0907626E22609EEB00F768F3 /* AccountBuilder.swift in Sources */,
-				0907626A2260930400F768F3 /* HomeBuilder.swift in Sources */,
 				09076262225F5AE500F768F3 /* HomeViewController.swift in Sources */,
-				09076264225F616100F768F3 /* HomeRouter.swift in Sources */,
-				090762682260758800F768F3 /* HomeInteractor.swift in Sources */,
-				090762722260A06800F768F3 /* AccountPresenter.swift in Sources */,
 				0907627022609FCC00F768F3 /* AccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
