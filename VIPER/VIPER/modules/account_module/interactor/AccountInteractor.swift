@@ -14,7 +14,6 @@ class AccountInteractor: AccountInteractorPropertiesProtocol {
 
 extension AccountInteractor: AccountPresenterToInteractorProtocol {
     func fetchData() {
-        print("Interactor: Got Request from Presenter to fetch data. Will give presenter the required data.")
         presenter?.fetchDataSuccess()
         //        presenter?.fetchDataFailed()
     }

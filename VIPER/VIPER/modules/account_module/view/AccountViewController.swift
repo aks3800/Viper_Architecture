@@ -24,7 +24,7 @@ class AccountViewController: UIViewController, AccountViewPropertiesProtocol {
 
         // Do any additional setup after loading the view.
         view.backgroundColor = UIColor.white
-        print("View: View is loaded now. Will ask presenter to start fetching data")
+        print("\n\nAccount View Controller Loaded\n\n")
         presenter?.startFetchingData()
     }
     
@@ -37,7 +37,6 @@ class AccountViewController: UIViewController, AccountViewPropertiesProtocol {
 
 extension AccountViewController: AccountPresenterToViewProtocol {
     func showView() {
-        print("View: Presenter has asked View to show itself")
         view.addSubview(label)
         NSLayoutConstraint.activate([
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -46,6 +45,5 @@ extension AccountViewController: AccountPresenterToViewProtocol {
     }
     
     func showError() {
-        print("View: Presenter has asked view to show error")
     }
 }
