@@ -8,12 +8,16 @@
 
 import Foundation
 class AccountPresenter: AccountPresenterPropertiesProtocol {
-    var view: AccountPresenterToViewProtocol?
+    weak var view: AccountPresenterToViewProtocol?
     
     var interactor: AccountPresenterToInteractorProtocol?
     
-    var router: AccountPresenterToRouterProtocol?
+    weak var router: AccountPresenterToRouterProtocol?
     
+    deinit {
+        print("\n\nDEINIT: AccountPresenter is getting deinitialized\n\n")
+        interactor = nil
+    }
     
 }
 

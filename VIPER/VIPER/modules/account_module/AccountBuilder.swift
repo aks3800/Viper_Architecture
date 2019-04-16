@@ -12,8 +12,8 @@ class AccountBuilder  {
     static func createModule() -> AccountViewController {
         print("Account Module Creation")
         let accountViewController = AccountViewController()
-        var presenter: AccountPresenterPropertiesProtocol & AccountViewToPresenterProtocol & AccountInteractorToPresenterProtocol = AccountPresenter()
-        var interactor: AccountInteractorPropertiesProtocol & AccountPresenterToInteractorProtocol = AccountInteractor()
+        let presenter: AccountPresenterPropertiesProtocol & AccountViewToPresenterProtocol & AccountInteractorToPresenterProtocol = AccountPresenter()
+        let interactor: AccountInteractorPropertiesProtocol & AccountPresenterToInteractorProtocol = AccountInteractor()
         let router: AccountPresenterToRouterProtocol = AccountRouter()
         accountViewController.presenter = presenter
         presenter.view = accountViewController

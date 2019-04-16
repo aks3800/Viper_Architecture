@@ -8,7 +8,11 @@
 
 import Foundation
 class AccountInteractor: AccountInteractorPropertiesProtocol {
-    var presenter: AccountInteractorToPresenterProtocol?
+    weak var presenter: AccountInteractorToPresenterProtocol?
+    
+    deinit {
+        print("\n\nDEINIT: AccountInteractor is getting deinitialized\n\n")
+    }
 }
 
 

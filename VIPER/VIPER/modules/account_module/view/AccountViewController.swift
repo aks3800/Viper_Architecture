@@ -30,6 +30,7 @@ class AccountViewController: UIViewController, AccountViewPropertiesProtocol {
     
     deinit {
         print("\n\nDEINIT: AccountViewController is getting deinitialized\n\n")
+        presenter = nil
     }
 
 }
