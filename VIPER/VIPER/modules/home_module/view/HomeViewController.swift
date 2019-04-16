@@ -14,7 +14,7 @@ import UIKit
     
     let button: UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
-        button.setTitle("Catalog", for: UIControl.State.normal)
+        button.setTitle("Account", for: UIControl.State.normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
