@@ -12,7 +12,7 @@ class AccountPresenter: AccountPresenterPropertiesProtocol {
     
     var interactor: AccountPresenterToInteractorProtocol?
     
-    weak var router: AccountPresenterToRouterProtocol?
+    var router: AccountPresenterToRouterProtocol?
     
     deinit {
         print("\n\nDEINIT: AccountPresenter is getting deinitialized\n\n")
