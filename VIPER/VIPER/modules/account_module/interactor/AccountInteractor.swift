@@ -8,13 +8,16 @@
 
 import Foundation
 class AccountInteractor: AccountInteractorPropertiesProtocol {
-    var presenter: AccountInteractorToPresenterProtocol?
+    weak var presenter: AccountInteractorToPresenterProtocol?
+    
+    deinit {
+        print("\n\nDEINIT: AccountInteractor is getting deinitialized\n\n")
+    }
 }
 
 
 extension AccountInteractor: AccountPresenterToInteractorProtocol {
     func fetchData() {
-        print("Interactor: Got Request from Presenter to fetch data. Will give presenter the required data.")
         presenter?.fetchDataSuccess()
         //        presenter?.fetchDataFailed()
     }

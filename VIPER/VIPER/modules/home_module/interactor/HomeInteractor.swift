@@ -9,7 +9,7 @@
 import Foundation
 
 class HomeInteractor: HomeInteractorPropertiesProtocol {
-    var presenter: HomeInteractorToPresenterProtocol?
+    weak var presenter: HomeInteractorToPresenterProtocol?
     
 }
 

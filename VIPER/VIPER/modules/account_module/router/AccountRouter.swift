@@ -10,7 +10,11 @@ import Foundation
 import UIKit
 
 class AccountRouter: AccountPresenterToRouterProtocol {
+    
+    deinit {
+        print("\n\nDEINIT: AccountRouter is getting deinitialized\n\n")
+    }
+    
     func pushTo_XYZ(navigationController: UINavigationController) {
-        print("Router: Presenter has asked router to push to XYZ")
     }
 }

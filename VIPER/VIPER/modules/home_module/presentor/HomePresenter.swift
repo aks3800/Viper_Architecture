@@ -11,7 +11,7 @@ import UIKit
 
 class HomePresenter: HomePresenterPropertiesProtocol {
     
-    var view: HomePresenterToViewProtocol?
+    weak var view: HomePresenterToViewProtocol?
     
     var interactor: HomePresenterToInteractorProtocol?
     
