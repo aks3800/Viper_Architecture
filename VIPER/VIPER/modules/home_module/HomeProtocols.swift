@@ -9,39 +9,39 @@
 import Foundation
 import UIKit
 
-protocol HomeViewPropertiesProtocol {
+protocol HomeViewPropertiesProtocol: class {
     var presenter: HomeViewToPresenterProtocol? { get set }
 }
 
-protocol HomePresenterPropertiesProtocol {
+protocol HomePresenterPropertiesProtocol: class {
     var view: HomePresenterToViewProtocol? { get set }
     var interactor: HomePresenterToInteractorProtocol? { get set }
     var router: HomePresenterToRouterProtocol? { get set }
 }
 
-protocol HomeInteractorPropertiesProtocol {
+protocol HomeInteractorPropertiesProtocol: class {
     var presenter: HomeInteractorToPresenterProtocol? { get set }
 }
 
-protocol HomeViewToPresenterProtocol {
+protocol HomeViewToPresenterProtocol: class {
     func startFetchingData()
     func buttonTapped(navigationController: UINavigationController)
 }
 
-protocol HomePresenterToViewProtocol {
+protocol HomePresenterToViewProtocol: class {
     func showView()
     func showError()
 }
 
-protocol HomePresenterToInteractorProtocol {
+protocol HomePresenterToInteractorProtocol: class {
     func fetchData()
 }
 
-protocol HomeInteractorToPresenterProtocol {
+protocol HomeInteractorToPresenterProtocol: class {
     func fetchDataSuccess()
     func fetchDataFailed()
 }
 
-protocol HomePresenterToRouterProtocol {
+protocol HomePresenterToRouterProtocol: class {
     func pushToAccount(navigationController: UINavigationController)
 }
