@@ -16,7 +16,7 @@ class AccountPresenter: AccountPresenterPropertiesProtocol {
     
     deinit {
         print("\n\nDEINIT: AccountPresenter is getting deinitialized\n\n")
-        interactor = nil
+        //interactor = nil
     }
     
 }
